@@ -4,6 +4,7 @@
     <meta charset="utf-8"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script type="application/javascript">
+var flag = false;
 $(function() {
   $("body").onload = test();
 })
@@ -18,9 +19,17 @@ function vibrate(millis) {
   var secs = millis | 500;
   console.log(secs);
   window.navigator.vibrate(secs);
+
+  flag = !flag;
+  if (!flag) {
+    $("#marker").css("background-color", "black");
+  } else {
+    $("#marker").css("background-color", "white");
+  }
 }
     </script>
   </head>
   <body>
+    <div id="marker" style="display:block; width:200px; height:200px; background-color: black;"></div>
   </body>
 </html>

@@ -12,15 +12,11 @@ $(function() {
 /* vibrates for 5s every 10s */
 function test() {
   console.log("testing");
-  setInterval(vibrate, 10000);
+  setInterval(change, 5000);
 }
 
-function vibrate(millis) {
-  var secs = millis | 500;
-  console.log(secs);
-  window.navigator.vibrate(secs);
-  //window.navigator.vibrate([100,30,100,30,100,200,200,30,200,30,200,200,100,30,100,30,100]); // Vibrate 'SOS' in Morse.
-
+function change() {
+  console.log("change");
   flag = !flag;
   if (!flag) {
     $("#marker").css("background-color", "black");
