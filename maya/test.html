@@ -12,7 +12,10 @@ if ("WebSocket" in window) {
   // The browser doesn't support WebSocket
   alert("WebSocket NOT supported by your Browser!");
 }
-// Now we can start the speech recognition recognition = new webkitSpeechRecognition();
+// Now we can start the speech recognition
+// Supported only in Chrome
+// Once started, you need to allow Chrome to use the microphone
+var recognition = new webkitSpeechRecognition();
 // Be default, Chrome will only return a single result.
 // By enabling "continuous", Chrome will keep the microphone active.
 recognition.continuous = true;
