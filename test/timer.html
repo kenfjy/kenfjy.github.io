@@ -4,20 +4,23 @@
     <meta charset="utf-8"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script type="application/javascript">
+var startTime = 0;
+
 $(function() {
   $("body").onload = test();
+  $("body").keypress(keyDown);
 })
 
-/* vibrates for 5s every 10s */
-function test() {
-  console.log("testing");
-  setInterval(vibrate, 20000);
-}
-
-function vibrate(millis) {
-  var secs = millis | 500;
-  console.log(secs);
-  window.navigator.vibrate(secs);
+function keyDown(event) {
+  if (event.which === 32) {
+    if (startTime == 0) {
+      startTime = new Date().getTime();
+    } else {
+      var endTime = new Date().getTime();
+      console.log(endTime - startTime);
+      startTime = 0;
+    }
+  }
 }
     </script>
   </head>
