@@ -4,13 +4,14 @@
     <meta charset="utf-8"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script type="application/javascript">
-var flag = false;
+// var flag = false;
 $(function() {
   $("body").onload = test();
 })
 
 /* vibrates for 5s every 10s */
 function test() {
+  vibrate(1000);
   console.log("testing");
   setInterval(vibrate, 20000);
 }
@@ -19,6 +20,7 @@ function vibrate(millis) {
   var secs = millis | 500;
   console.log(secs);
   window.navigator.vibrate(secs);
+  /*
 
   flag = !flag;
   if (!flag) {
@@ -26,6 +28,7 @@ function vibrate(millis) {
   } else {
     $("#marker").css("background-color", "white");
   }
+  */
 }
     </script>
   </head>
