@@ -19,6 +19,7 @@ function vibrate(millis) {
   var secs = millis | 500;
   console.log(secs);
   window.navigator.vibrate(secs);
+
   flag = !flag;
   if (!flag) {
     $("#marker").css("background-color", "black");
