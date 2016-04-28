@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script type="application/javascript">
+var flag = false;
+$(function() {
+  $("body").onload = test();
+})
+
+/* vibrates for 5s every 10s */
+function test() {
+  console.log("testing");
+  setInterval(vibrate, 2500);
+}
+
+function vibrate(millis) {
+  var secs = millis | 100;
+  console.log(secs);
+  window.navigator.vibrate(secs);
+
+  flag = !flag;
+  if (!flag) {
+    $("#marker").css("background-color", "black");
+  } else {
+    $("#marker").css("background-color", "white");
+  }
+}
+    </script>
+  </head>
+  <body>
+    <div id="marker" style="display:block; width:200px; height:200px; background-color: black;"></div>
+  </body>
+</html>
