@@ -1,7 +1,107 @@
+html,body {
+  height: 100%;
+}
 body {
-   padding: 50px 0;
-   font-size: 13px;
-   font-family: "Noto Serif";
-   font-style: normal;
-   font-weight: 400;
- }
+  font-size: 16px;
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-weight: 400;
+}
+
+div#wrapper {
+  height: auto;
+  min-height: 100%;
+  overflow: hidden;
+  padding:  36px;
+  position: relative;
+  background-color: #666666;
+}
+
+header {
+  padding: 1.2rem 36px;
+  height: auto;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0.8rem;
+  left: 0;
+  background-color: #222222;
+  font-family: "Noto Sans";
+  z-index: 1;
+  opacity: 0.7;
+  transition: opacity 0.5s ease-in-out;
+}
+
+header * {
+  color: #EEEEEE;
+}
+
+header:hover {
+  opacity: 1.0;
+}
+
+header h1 {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+header h1 a {
+  font-size: 1.0rem;
+  letter-spacing: 0.15rem;
+  font-weight: 600;
+  /*
+  animation: NameHoverOut 0.5s linear;
+  */
+}
+
+header ul {
+  display: inline-block;
+  list-style:none;
+  font-size: 0.8rem;
+}
+header ul li {
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+header ul li:first-child {
+  margin-left: 0;
+}
+
+footer {
+  position: fixed;
+  bottom: 36px;
+  right: 36px;
+  text-align: right;
+}
+footer p, footer a {
+  font-size: 0.7rem;
+}
+
+div#main {
+}
+
+div#main img {
+  width: 100%;
+  height: auto;
+}
+
+/* for sp */
+@media screen and (min-width: 480px) {
+}
+
+@keyframes NameHoverIn {
+  from {
+    letter-spacing: 1.5px;
+  }
+  to {
+    letter-spacing: 3.0px;
+  }
+}
+
+@keyframes NameHoverOut {
+  from {
+    letter-spacing: 3.0px;
+  }
+  to {
+    letter-spacing: 1.5px;
+  }
+}

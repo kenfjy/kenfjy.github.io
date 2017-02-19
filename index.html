@@ -18,7 +18,7 @@
   if (window.location.protocol !== "http:" && window.location.protocol !== "https:") {
     link_element.href = "http:";
   }
-  link_element.href += "//fonts.googleapis.com/css?family=Noto+Serif:400italic,400,700italic,700";
+  link_element.href += "//fonts.googleapis.com/css?family=Noto+Sans:400italic,400,700italic,700?family=Noto+Serif:400italic,400,700italic,700";
   link_element.rel = "stylesheet";
   link_element.type = "text/css";
   s.parentNode.insertBefore(link_element, s);
@@ -27,14 +27,31 @@
   </head>
   <body>
     <header>
-      <h1>kenfjy</h1>
+      <h1><a id="header_name" href=".">kenfjy</a></h1>
+      <ul> 
+        <li><a href=".">design technologist</a></li>
+        <li><a href=".">contact</a></li>
+      </ul>
     </header>
-    <footer>
-      <div id="contact">
-        <p>For any enquiries, please get in touch. I am always happy to discuss about potential projects in any form.</p>
-        <a href="mailto:kenfjy@gmail.com?Subject=Hello">E</a>
-      </div>
-      <p>(C)2016-2017 ken fujiyoshi</p>
-    </footer>
+    <div id="wrapper">
+      <div id="main">
+        <div id="projects">
+          <div class="project">
+            <h2 class="project_title">LACU</h2>
+            <ul class="project_tags">
+              <li>[EXPLORATIVE]</li>
+            </ul>
+            <img src="img/cover/lacu.jpg" alt="LACU" />
+          </div><!-- div.project -->
+        </div><!-- div#projects -->
+        <div id="contact">
+          <p>For any enquiries, please get in touch. I am always happy to discuss about potential projects in any form.</p>
+          <a href="mailto:kenfjy@gmail.com?Subject=Hello">E</a>
+        </div>
+      </div><!-- div#main -->
+      <footer>
+        <p>(C) 2016-2017 ken fujiyoshi</p>
+      </footer>
+    </div><!-- div#wrapper -->
   </body>
 </html>
