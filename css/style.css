@@ -3,7 +3,7 @@ html,body {
 }
 body {
   font-size: 16px;
-  font-family: "Noto Serif";
+  font-family: "Roboto Slab", serif;
   font-style: normal;
   font-weight: 400;
 }
@@ -12,80 +12,162 @@ div#wrapper {
   height: auto;
   min-height: 100%;
   overflow: hidden;
-  padding:  36px;
+  padding: 6.0rem 36px;
   position: relative;
-  background-color: #666666;
+  background-color: #ADADAD;
+}
+
+header, footer {
+  position: fixed;
+  font-family: "Roboto", sans-serif;
+  z-index: 1;
+}
+
+header h1 a, footer p a {
+  display: inline-block;
+  padding: 0.7rem 24px;
+  height: auto;
+  overflow: hidden;
+  transition: background-color 0.6s ease-out;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  color: #FFF;
+}
+
+header h1 a:hover, footer p a:hover {
+  background-color: #888;
 }
 
 header {
-  padding: 1.2rem 36px;
-  height: auto;
-  overflow: hidden;
-  position: fixed;
-  bottom: 0.8rem;
+  top: 0.8rem;
   left: 0;
-  background-color: #222222;
-  font-family: "Noto Sans";
-  z-index: 1;
-  opacity: 0.7;
-  transition: opacity 0.5s ease-in-out;
-}
-
-header * {
-  color: #EEEEEE;
-}
-
-header:hover {
-  opacity: 1.0;
-}
-
-header h1 {
-  display: inline-block;
-  margin-right: 1rem;
-}
-
-header h1 a {
-  font-size: 1.0rem;
-  letter-spacing: 0.15rem;
-  font-weight: 600;
-  /*
-  animation: NameHoverOut 0.5s linear;
-  */
-}
-
-header ul {
-  display: inline-block;
-  list-style:none;
-  font-size: 0.8rem;
-}
-header ul li {
-  display: inline-block;
-  margin-left: 0.5rem;
-}
-header ul li:first-child {
-  margin-left: 0;
 }
 
 footer {
-  position: fixed;
-  bottom: 36px;
-  right: 36px;
-  text-align: right;
-}
-footer p, footer a {
-  font-size: 0.7rem;
+  bottom: 0.8rem;
+  right: 0;
 }
 
+header h1 a {
+  padding-left: 48px;
+}
+
+footer p a {
+  padding-right: 48px;
+}
+
+header h1 a span {
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  margin-right: 1rem;
+}
+
+/* [TODO] do something about the width */
 div#main {
 }
 
-div#main img {
+div.project {
+  width: 80%;
+  max-width: 640px;
+  margin: 3rem auto 0;
+  position: relative;
+  border: 5px solid #39A;
+}
+
+div.project:first-child {
+  margin-top: 0;
+}
+
+div.project * {
+  font-family: "Roboto", sans-serif;
+}
+
+div.project img {
   width: 100%;
+  opacity: 0.2;
+  transition: opacity 0.6s ease-out;
+  display: block;
+}
+
+div.project:hover img {
+  opacity: 1.0;
+}
+
+div.project div.project_meta {
+  width: auto;
+  max-width: 600px;
   height: auto;
+  overflow: hidden;
+  position: absolute;
+  display: inline-block;
+  left: -1rem;
+  bottom: 1rem;
+  padding: 1rem 1.5rem 1rem 3rem;
+  background-color: #4AB;
+}
+
+div.project_meta * {
+  color: #FFF;
+}
+
+div.project_meta h2 {
+  display: inline-block;
+  font-size: 1.1rem;
+  letter-spacing: 0.08rem;
+  padding-bottom: 0.2rem;
+}
+
+div.project_meta p {
+  font-size: 0.85rem;
+  padding-bottom: 0.5rem;
+  font-weight: 300;
+  letter-spacing: 0.05rem;
+  line-height: 150%;
+}
+
+div.project_meta ul li {
+  display: inline-block;
+  font-size: 0.7rem;
+  padding: 0.1rem 0.4rem;
+  background-color: white;
+  font-family: "Roboto Slab", serif;
+  color: #4AB;
 }
 
 /* for sp */
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 600px) {
+  div.project {
+    width: 100%;
+    border: 0;
+    transition: opacity 0.6s ease-out;
+  }
+
+  div.project:focus, 
+  div.project:hover, 
+  div.project:active {
+    opacity: 0.5;
+  }
+
+  div.project img.project_cover {
+    opacity: 1.0;
+  }
+
+  div.project div.project_meta {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    left: 0;
+    bottom: 0;
+  }
+  div.project div.project_meta h2 {
+    padding: 1rem 1rem 0.2rem;
+  }
+  div.project div.project_meta p {
+    padding: 0 1rem 1rem;
+  }
+  div.project div.project_meta ul {
+    display: none;
+  }
 }
 
 @keyframes NameHoverIn {
