@@ -14,7 +14,7 @@ div#wrapper {
   overflow: hidden;
   padding: 6.0rem 36px;
   position: relative;
-  background-color: #ADADAD;
+  background-color: #DDD;
 }
 
 header, footer {
@@ -28,16 +28,18 @@ header h1 a, footer p a {
   padding: 0.7rem 24px;
   height: auto;
   overflow: hidden;
-  transition: background-color 0.6s ease-out;
+  transition: background-color 0.6s ease-out, 
+    color 0.6s ease-out;
   font-size: 0.9rem;
   letter-spacing: 0.1rem;
-  color: #FFF;
+  color: #333;
 }
 
 header h1 a:focus, footer p a:focus,
 header h1 a:hover, footer p a:hover,
 header h1 a:active, footer p a:active {
   background-color: #888;
+  color: #FFF;
 }
 
 header {
@@ -73,7 +75,7 @@ div.project {
   max-width: 640px;
   margin: 3rem auto 0;
   position: relative;
-  border: 5px solid #39A;
+  border: 5px solid #777;
 }
 
 div.project:first-child {
@@ -107,7 +109,11 @@ div.project div.project_meta {
   left: -1rem;
   bottom: 1rem;
   padding: 1rem 1.5rem 1rem 3rem;
+  /*
+   * color-change
   background-color: #4AB;
+  */
+  background-color: #666;
 }
 
 div.project_meta * {
@@ -135,13 +141,18 @@ div.project_meta ul li {
   padding: 0.1rem 0.4rem;
   background-color: white;
   font-family: "Roboto Slab", serif;
+  /*
+   * color-change
   color: #4AB;
+  */
+  color: #666;
 }
 
 /* for sp */
 @media screen and (max-width: 600px) {
   header h1 a, footer p a {
-    background-color: #777;
+    background-color: #888;
+    color: #FFF;
     font-size: 0.8rem;
     opacity: 0.8;
     transition: opacity 0.6s ease-out;
@@ -150,7 +161,6 @@ div.project_meta ul li {
   header h1 a:focus, footer p a:focus, 
   header h1 a:hover, footer p a:hover, 
   header h1 a:active, footer p a:active {
-    background-color: #777;
     opacity: 1.0;
   }
 
