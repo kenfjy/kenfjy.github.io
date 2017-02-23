@@ -141,11 +141,12 @@ div.project_meta ul li {
   padding: 0.1rem 0.4rem;
   background-color: white;
   font-family: "Roboto Slab", serif;
-  /*
-   * color-change
-  color: #4AB;
-  */
   color: #666;
+  margin-left: 0.3rem;
+}
+
+div.project_meta ul li:first-child {
+  margin-left: 0;
 }
 
 /* for sp */
