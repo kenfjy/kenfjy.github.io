@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>kenfjy - design technologist</title>
     <meta name="description" content="portfolio website for ken fujiyoshi">
     <meta name="keywords" content="design, creative, technology, ken, fujiyoshi, kenfjy, klee_arc">
@@ -10,14 +12,13 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400|Roboto:300,400,400i,700" rel="stylesheet">
     <link href="./css/reset.css" type="text/css" rel="stylesheet"/>
     <link href="./css/style.css" type="text/css" rel="stylesheet"/>
-    <script type="application/javascript" src="js/script.js"></script>
+
+    <script type="application/javascript" src="./js/script.js"></script>
+    <script src="./js/riot.compiler.min.js"></script>
+    <script src="tag/page_header.tag" type="riot/tag"></script>
   </head>
   <body>
-    <header>
-      <h1>
-        <a href="./about.html"><span id="name">kenfjy</span> design technologist</a>
-      </h1>
-    </header>
+    <page_header></page_header>
     <div id="wrapper">
       <div id="main">
         <div id="projects">
@@ -89,5 +90,9 @@
     <footer>
       <p><a href="./contact.html">contact</a></p>
     </footer>
+
+    <script>
+riot.mount('page_header', 'page_header', {});
+    </script>
   </body>
 </html>

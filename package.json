@@ -1,0 +1,19 @@
+{
+  "name": "kenfjy.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/kenfjy/kenfjy.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kenfjy/kenfjy.github.io/issues"
+  },
+  "homepage": "https://github.com/kenfjy/kenfjy.github.io#readme"
+}

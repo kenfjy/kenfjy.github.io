@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BRidGE</title>
+
+    <!--[if le IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <!-- riot -->
+    <script src="js/riot.compiler.min.js"></script>
+    <script src="tag/start.tag" type="riot/tag"></script>
+    <script src="tag/slider.tag" type="riot/tag"></script>
+
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <start></start>
+
+    <slider id="slider_name"></slider>
+    <slider id="slider_date"></slider>
+    <slider id="slider_place"></slider>
+
+    <script>
+      var obs = riot.observable();
+
+      riot.mount('start', 'start', {
+      });
+
+      riot.mount('#slider_name', 'slider', {
+        type: 'name',
+        names: [
+          { title: 'A' },
+          { title: 'AS' },
+          { title: 'Andrew' },
+          { title: 'Andrew S' },
+          // { title: 'Andrew Slack' },
+          { title: 'Andrew James Slack' }
+        ]
+      });
+
+      riot.mount('#slider_date', 'slider', {
+        type: 'date',
+        names: [
+          { title: '2017' },
+          { title: 'January 2017' },
+          { title: '11/01/2017' },
+          { title: 'Morning of 11/01/2017' },
+          { title: '11AM 11/01/2017' },
+          { title: '11:10:22 11/01/2017' }
+        ]
+      });
+
+      var place = riot.mount('#slider_place', 'slider', {
+        type: 'location',
+        names: [
+          { title: 'United Kingdom'  },
+          { title: 'London, UK'  },
+          { title: 'Royal College of Art, London, UK'  },
+          { title: 'RCA WIP SHOW, London, UK'  },
+          { title: 'Innovation Design Engineering WIP Show' },
+          { title: '3rd Floor, Darwin Building, Royal College of Art, Kensington Gore, London, SW7 2EU. United Kingdom' }
+        ]
+      });
+
+    </script>
+  </body>
+</html>
+
