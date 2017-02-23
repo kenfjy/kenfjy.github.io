@@ -25,6 +25,10 @@
       <div id="main">
         <div id="projects">
           <project id="project_lacu"></project>
+          <project id="project_mura"></project>
+          <project id="project_green"></project>
+          <project id="project_3drw"></project>
+          <project id="project_automate"></project>
         </div><!-- div#projects -->
         <div id="enquiry">
           <p>For any enquiries, please get in touch. I am always happy to discuss about potential projects in any form.</p>
@@ -38,16 +42,37 @@
     <page_footer></page_footer>
 
     <script>
+/* PROJECTS */
+riot.mount('#project_lacu', 'index_project', {
+  name: 'LACU', meta: 'lacu', img:'jpg', tag: ['explorative', 'user experience'],
+  explanation: 'Creating an experience of self-reflection through verbalization'
+});
+riot.mount('#project_mura', 'index_project', {
+  name: 'Project Mura', meta: 'mura', img:'jpg', tag: ['user experience', 'interaction design'],
+  explanation: 'Orchestrating a musical experience in confined space'
+});
+/*
+riot.mount('#project_ours', 'index_project', {
+  name: 'ours', meta: 'ours', img: 'jpg', tag: ['explorative', 'interaction design'],
+  explanation: 'Designing an alternative equipment to work with time'
+});
+*/
+riot.mount('#project_green', 'index_project', {
+  name: 'Looking for the green', meta: 'green', img:'jpg', tag: ['explorative', 'interaction design'],
+  explanation: 'A prototype to explore the possibility of plants exploring their own habitat'
+});
+riot.mount('#project_3drw', 'index_project', {
+  name: '3DRW', meta: '3drw', img: 'jpg', tag: ['experimental', 'interaction design', 'user experience'],
+  explanation: 'What happens if we could embed an information within objects?'
+});
+riot.mount('#project_automate', 'index_project', {
+  name: 'AUTOMA-TE', meta: 'automate', img: 'png', tag: ['interaction design', 'user interface'],
+  explanation: 'Exploring an intuitive solution to interact with a peculiar gadget'
+});
+
+/* ASSETS */
 riot.mount('page_header', 'page_header', {});
 riot.mount('page_footer', 'page_footer', {});
-riot.mount('#project_lacu', 'index_project', {
-  name: 'LACU',
-  meta: 'lacu',
-  tag: [
-    { title: 'explorative' }, 
-    { title: 'user experience'}
-  ]
-});
     </script>
   </body>
 </html>

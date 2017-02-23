@@ -29,7 +29,7 @@ header h1 a, footer p a {
   height: auto;
   overflow: hidden;
   transition: background-color 0.6s ease-out, 
-    color 0.6s ease-out;
+    color 0.4s ease-out;
   font-size: 0.9rem;
   letter-spacing: 0.1rem;
   color: #333;
@@ -78,7 +78,7 @@ div.project {
   border: 5px solid #777;
 }
 
-div.project:first-child {
+index_project:first-child div.project {
   margin-top: 0;
 }
 
@@ -109,10 +109,11 @@ div.project div.project_meta {
   left: -1rem;
   bottom: 1rem;
   padding: 1rem 1.5rem 1rem 3rem;
-  /*
-   * color-change
-  background-color: #4AB;
-  */
+  background-color: #777;
+  transition: background-color 0.6s ease-out; 
+}
+
+div.project:hover div.project_meta {
   background-color: #666;
 }
 
