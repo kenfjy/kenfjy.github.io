@@ -3,7 +3,6 @@
  */
 
 <index_project>
-  <div class="project">
     <a href="./work/{ meta }.html">
       <img class="project_cover" src="./img/cover/{ meta }_icon.{ img }" alt="{ name }" />
       <div class="project_meta">
@@ -16,7 +15,6 @@
         </ul>
       </div><!-- div.project_meta -->
     </a>
-  </div><!-- div.project -->
 
 <script>
   var self = this;
@@ -28,7 +26,6 @@
   for (var i=0; i<opts.tag.length; i++) {
     this.tag.push({title: opts.tag[i] });
   }
-  console.log(this.tag);
 
   this.on('mount', function() {});
 </script>

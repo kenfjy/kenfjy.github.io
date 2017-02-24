@@ -70,23 +70,24 @@ header h1 a span {
 div#main {
 }
 
-div.project {
+project {
   width: 80%;
   max-width: 640px;
   margin: 3rem auto 0;
   position: relative;
   border: 5px solid #777;
+  display: block;
 }
 
-index_project:first-child div.project {
+project:first-child {
   margin-top: 0;
 }
 
-div.project * {
+project * {
   font-family: "Roboto", sans-serif;
 }
 
-div.project img.project_cover {
+project img.project_cover {
   width: 100%;
   min-width: 200px;
   min-height: 200px;
@@ -95,11 +96,11 @@ div.project img.project_cover {
   display: block;
 }
 
-div.project:hover img.project_cover {
+project:hover img.project_cover {
   opacity: 1.0;
 }
 
-div.project div.project_meta {
+project div.project_meta {
   width: auto;
   max-width: 600px;
   height: auto;
@@ -113,7 +114,7 @@ div.project div.project_meta {
   transition: background-color 0.6s ease-out; 
 }
 
-div.project:hover div.project_meta {
+project:hover div.project_meta {
   background-color: #666;
 }
 
@@ -166,36 +167,36 @@ div.project_meta ul li:first-child {
     opacity: 1.0;
   }
 
-  div.project {
+  project {
     width: 100%;
     border: 0;
     transition: opacity 0.6s ease-out;
   }
 
-  div.project:focus, 
-  div.project:hover, 
-  div.project:active {
+  project:focus, 
+  project:hover, 
+  project:active {
     opacity: 0.5;
   }
 
-  div.project img.project_cover {
+  project img.project_cover {
     opacity: 1.0;
   }
 
-  div.project div.project_meta {
+  project div.project_meta {
     position: relative;
     width: 100%;
     padding: 0;
     left: 0;
     bottom: 0;
   }
-  div.project div.project_meta h2 {
+  project div.project_meta h2 {
     padding: 1rem 1rem 0.2rem;
   }
-  div.project div.project_meta p {
+  project div.project_meta p {
     padding: 0 1rem 1rem;
   }
-  div.project div.project_meta ul {
+  project div.project_meta ul {
     display: none;
   }
 }
