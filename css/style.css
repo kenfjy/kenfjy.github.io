@@ -66,13 +66,16 @@ header h1 a span {
   margin-right: 1rem;
 }
 
-/* [TODO] do something about the width */
-div#main {
+div#wrapper > * {
+  width: 80%;
+  max-width: 640px;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
 }
 
 project {
-  width: 80%;
-  max-width: 640px;
   margin: 3rem auto 0;
   position: relative;
   border: 5px solid #777;
@@ -151,8 +154,16 @@ div.project_meta ul li:first-child {
   margin-left: 0;
 }
 
+credit {
+  margin-top: 2rem;
+}
+credit p {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
 /* for sp */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
   header h1 a, footer p a {
     background-color: #888;
     color: #FFF;
@@ -167,8 +178,11 @@ div.project_meta ul li:first-child {
     opacity: 1.0;
   }
 
-  project {
+  div#wrapper > * {
     width: 100%;
+  }
+
+  project {
     border: 0;
     transition: opacity 0.6s ease-out;
   }
