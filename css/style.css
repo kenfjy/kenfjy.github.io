@@ -3,7 +3,7 @@ html,body {
 }
 body {
   font-size: 16px;
-  font-family: "Roboto Slab", serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
 }
@@ -14,12 +14,11 @@ div#wrapper {
   overflow: hidden;
   padding: 6.0rem 36px;
   position: relative;
-  background-color: #DDD;
+  background-color: #EEE;
 }
 
 header, footer {
   position: fixed;
-  font-family: "Roboto", sans-serif;
   z-index: 1;
 }
 
@@ -74,6 +73,10 @@ div#wrapper > * {
   margin-left: auto;
   display: block;
 }
+
+/*
+ * index_project tag
+ */
 
 project {
   margin: 3rem auto 0;
@@ -154,16 +157,83 @@ div.project_meta ul li:first-child {
   margin-left: 0;
 }
 
+/*
+ * credit tag
+ */
 credit {
   margin-top: 2rem;
 }
 credit p {
   text-align: center;
   font-size: 0.8rem;
+  font-family: "Roboto Slab", serif;
+}
+
+/**********************
+  for individual pages
+ ********************** */
+
+div#about > div {
+  margin-top: 2rem;
+}
+div#about > div:first-child {
+  margin-top: 0;
+}
+div#about h3 {
+  letter-spacing: 0.05rem;
+  font-size: 1rem;
+  font-weight: bold;
+  display: inline-block;
+  padding-bottom: 0.1rem;
+  border-bottom: 3px solid black;
+/*
+ * font-weight: bold;
+ * font-style: italic;
+ */
+}
+div#about p {
+  font-size: 1rem;
+  margin-top: 0.8rem;
+  line-height: 190%;
+}
+div#about a {
+  color: #777;
+  border-bottom: 2px solid #777;
+  padding-bottom: 0.1rem;
+  transition: border 0.6s ease-out,
+    color 0.6s ease-out;
+}
+div#about a:focus,
+div#about a:hover,
+div#about a:active {
+  color: #338;
+  border-color: #338;
+}
+div#about div#profile p {
+  text-indent: 1rem;
+}
+div#about span.sub_work {
+  font-size: 0.8rem;
+  font-style: italic;
+}
+div#about span.sub_work a {
+  border: none;
 }
 
 /* for sp */
 @media screen and (max-width: 640px) {
+  header h1 a, footer p a {
+    font-size: 0.8rem;
+    background-color: #EEE;
+  }
+  header h1 a {
+    padding-left: 36px;
+  }
+
+  footer p a {
+    padding-right: 36px;
+  }
+  /*
   header h1 a, footer p a {
     background-color: #888;
     color: #FFF;
@@ -177,6 +247,7 @@ credit p {
   header h1 a:active, footer p a:active {
     opacity: 1.0;
   }
+  */
 
   div#wrapper > * {
     width: 100%;

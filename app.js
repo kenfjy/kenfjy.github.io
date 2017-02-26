@@ -20,6 +20,10 @@ function httpSetup() {
     response.sendFile(__dirname + '/index.html');
   });
 
+  app.use('/about.html', express.static('about.html'));
+  app.use('/contact.html', express.static('contact.html'));
+  app.use('/work', express.static('work'));
+
   app.use('/css', express.static('css'));
   app.use('/js', express.static('js'));
   app.use('/img', express.static('img'));
