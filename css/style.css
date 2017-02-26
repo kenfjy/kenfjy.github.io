@@ -12,7 +12,7 @@ div#wrapper {
   height: auto;
   min-height: 100%;
   overflow: hidden;
-  padding: 6.0rem 36px;
+  padding: 5.0rem 36px 2.0rem;
   position: relative;
   background-color: #EEE;
 }
@@ -161,7 +161,7 @@ div.project_meta ul li:first-child {
  * credit tag
  */
 credit {
-  margin-top: 2rem;
+  margin-top: 3.0rem;
 }
 credit p {
   text-align: center;
@@ -179,44 +179,44 @@ div#about > div {
 div#about > div:first-child {
   margin-top: 0;
 }
-div#about h3 {
+div#about h3, div#contact h3 {
   letter-spacing: 0.05rem;
   font-size: 1rem;
   font-weight: bold;
   display: inline-block;
-  padding-bottom: 0.1rem;
+  padding: 0 0.05rem 0.15rem;
   border-bottom: 3px solid black;
 /*
  * font-weight: bold;
  * font-style: italic;
  */
 }
-div#about p {
+div#about p, div#contact p {
   font-size: 1rem;
   margin-top: 0.8rem;
   line-height: 190%;
 }
-div#about a {
+div#about a, div#contact a {
   color: #777;
   border-bottom: 2px solid #777;
   padding-bottom: 0.1rem;
   transition: border 0.6s ease-out,
     color 0.6s ease-out;
 }
-div#about a:focus,
-div#about a:hover,
-div#about a:active {
-  color: #338;
-  border-color: #338;
+div#about a:focus, div#contact a:focus,
+div#about a:hover, div#contact a:hover,
+div#about a:active, div#contact a:active {
+  color: #77C;
+  border-color: #77C;
 }
 div#about div#profile p {
   text-indent: 1rem;
 }
-div#about span.sub_work {
+div#about span.sub_el {
   font-size: 0.8rem;
   font-style: italic;
 }
-div#about span.sub_work a {
+div#about span.sub_el a {
   border: none;
 }
 
