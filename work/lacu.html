@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>kenfjy - LACU</title>
+    <meta name="description" content="portfolio website for ken fujiyoshi">
+    <meta name="keywords" content="design, creative, technology, ken, fujiyoshi, kenfjy, klee_arc">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400|Roboto:300,400,400i,700" rel="stylesheet">
+    <link href="./css/reset.css" type="text/css" rel="stylesheet"/>
+    <link href="./css/style.css" type="text/css" rel="stylesheet"/>
+    <!-- <script type="application/javascript" src="./js/script.js"></script> -->
+    <script src="./js/riot.compiler.min.js"></script>
+    <script src="tag/page_header.tag" type="riot/tag"></script>
+    <script src="tag/page_footer.tag" type="riot/tag"></script>
+    <script src="tag/credit.tag" type="riot/tag"></script>
+  </head>
+  <body>
+    <page_header></page_header>
+    <div id="project_wrapper">
+      <credit></credit>
+    </div><!-- div#project_wrapper -->
+    <page_footer></page_footer>
+
+    <script>
+/* ASSETS */
+riot.mount('page_header', 'page_header', {link: '../index.html'});
+riot.mount('page_footer', 'page_footer', {link: '../contact.html'});
+riot.mount('credit', 'credit', {year: 2017});
+    </script>
+  </body>
+</html>
