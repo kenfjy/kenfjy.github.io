@@ -8,15 +8,6 @@ body {
   font-weight: 400;
 }
 
-div#wrapper {
-  height: auto;
-  min-height: 100%;
-  overflow: hidden;
-  padding: 5.0rem 36px 2.0rem;
-  position: relative;
-  background-color: #EEE;
-}
-
 header, footer {
   position: fixed;
   z-index: 1;
@@ -65,13 +56,21 @@ header h1 a span {
   margin-right: 1rem;
 }
 
+div#wrapper, div#project_wrapper {
+  height: auto;
+  min-height: 100%;
+  overflow: hidden;
+  padding: 5.0rem 36px 3.0rem;
+  position: relative;
+  background-color: #EEE;
+}
+
 div#wrapper > * {
   width: 80%;
   max-width: 640px;
   height: auto;
   margin-right: auto;
   margin-left: auto;
-  display: block;
 }
 
 /*
@@ -161,7 +160,8 @@ div.project_meta ul li:first-child {
  * credit tag
  */
 credit {
-  margin-top: 3.0rem;
+  margin-top: 2.0rem;
+  display: block;
 }
 credit p {
   text-align: center;
