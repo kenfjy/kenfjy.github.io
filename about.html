@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>kenfjy - about Ken</title>
+    <meta name="description" content="portfolio website for ken fujiyoshi">
+    <meta name="keywords" content="design, creative, technology, ken, fujiyoshi, kenfjy, klee_arc">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400|Roboto:300,400,400i,700" rel="stylesheet">
+    <link href="./css/reset.css" type="text/css" rel="stylesheet"/>
+    <link href="./css/style.css" type="text/css" rel="stylesheet"/>
+    <!-- <script type="application/javascript" src="./js/script.js"></script> -->
+    <script src="./js/riot.compiler.min.js"></script>
+    <script src="tag/page_header.tag" type="riot/tag"></script>
+    <script src="tag/page_footer.tag" type="riot/tag"></script>
+    <script src="tag/credit.tag" type="riot/tag"></script>
+  </head>
+  <body>
+    <page_header></page_header>
+    <div id="wrapper">
+      <div id="about">
+        <div id="profile">
+          <h3>KEN FUJIYOSHI</h3>
+          <p>Ken is a Japanese design technologist based in London. He explores <span>the user and social interaction that technology brings</span>, and <span>the role of design within these interactions</span>. As a designer, he loves experimenting with new technologies and designing user experiences around them.</p>
+          <p>Although Ken is currently studying at the <a target="_blank" href="https://www.rca.ac.uk">Royal College of Art</a>, he is keen to collaborate on projects that aim to explore and challenge the potential of technology through design. To get in touch, contact him <a href="mailto:kenfjy@gmail.com?Subject=Hello">here by Email</a> or via <a href="./contact.html">other ways</a>. Below are few things that Ken has experience in and enjoys working on.</p>
+        </div><!-- div#profile -->
+        <div id="experience">
+            <h3>WORK EXPERIENCE</h3>
+            <p>2016.08 - 2016.09<br/>&nbsp&nbsp&nbsp&nbsp
+            Internship for <a target="_blank" href="http://www.studioswine.com/">Studio Swine</a><br/>&nbsp&nbsp&nbsp&nbsp
+            <span class="sub_work">worked on <a target="_blank" href="http://www.studioswine.com/fordlandia">FORDLANDIA</a> and others</span></p>
+            <p>2015.03 - 2015.09<br/>&nbsp&nbsp&nbsp&nbsp
+            Internship for <a target="_blank" href="http://www.takram.com">takram design engineering</a><br/>&nbsp&nbsp&nbsp&nbsp
+            <span class="sub_work">worked on <a target="_blank" href="https://www.takram.com/projects/a-single-room-with-a-single-book-morioka-shoten/?lang=en">Morioka Shoten</a> , <a target="_blank" href="https://www.takram.com/projects/mimicries/?lang=en">Mimicries</a> and others</span></p>
+            <p>2014.04 - 2015.02<br/>&nbsp&nbsp&nbsp&nbsp
+            Internship for <a target="_blank" href="http://nosigner.com">NOSIGNER</a><br/>&nbsp&nbsp&nbsp&nbsp
+            <span class="sub_work">worked on <a target="_blank" href="http://nosigner.com/case/space-space/">SPACE SPACE</a> , <a target="_blank" href="http://nosigner.com/case/kinowa/">KINOWA</a> and others</span></p>
+        </div><!-- div#experience -->
+        <div id="education">
+            <h3>Education</h3>
+            <p>2015.09 - <br/>&nbsp&nbsp&nbsp&nbsp
+            MA/MSc Innovation Design Engineering, <a target="_blank" href="https://www.rca.ac.uk">Royal College of Art</a></p>
+            <p>2011.04 - 2015.03<br/>&nbsp&nbsp&nbsp&nbsp
+            BA Environment and Information Studies, <a target="_blank" href="https://www.keio.ac.jp/en/">Keio University</a></p>
+        </div><!-- div#experience -->
+      </div><!-- div#about -->
+      <credit></credit>
+    </div><!-- div#wrapper -->
+    <page_footer></page_footer>
+
+    <script>
+/* ASSETS */
+riot.mount('page_header', 'page_header', {link: 'index.html'});
+riot.mount('page_footer', 'page_footer', {});
+riot.mount('credit', 'credit', {year: 2017});
+    </script>
+  </body>
+</html>
