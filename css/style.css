@@ -60,7 +60,7 @@ div#wrapper {
   height: auto;
   min-height: 100%;
   overflow: hidden;
-  padding: 5.0rem 36px 3.0rem;
+  padding: 5.0rem 2.0rem 3.0rem;
   position: relative;
   background-color: #DDD;
 }
@@ -78,7 +78,7 @@ div#wrapper > * {
  */
 
 project {
-  margin: 3rem auto 0;
+  margin: 2.0rem auto 0;
   position: relative;
   border: 5px solid #FFF;
   display: block;
@@ -147,7 +147,7 @@ div.project_meta h2 {
 }
 
 div.project_meta p {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-weight: 300;
   padding-bottom: 0.5rem;
   letter-spacing: 0.05rem;
@@ -214,17 +214,19 @@ div#about p, div#contact p {
   line-height: 190%;
 }
 div#about a, div#contact a {
-  color: #666;
-  border-bottom: 2px solid #666;
-  padding-bottom: 0.1rem;
-  transition: border 0.6s ease-out,
-    color 0.6s ease-out;
+  color: #555;
+  border-bottom: 2px solid #555;
+  margin: -0.1rem -0.1rem -0.1rem;
+  padding: 0.1rem 0.15rem 0.1rem;
+  transition: background-color 0.3s ease-out,
+    color 0.3s ease-out,
+    border 0.3s ease-out;
 }
 div#about a:focus, div#contact a:focus,
 div#about a:hover, div#contact a:hover,
 div#about a:active, div#contact a:active {
-  color: #77F;
-  border-color: #77F;
+  background-color: #888;
+  color: #FFF;
 }
 div#about div#profile p {
   text-indent: 1rem;
@@ -246,22 +248,98 @@ div#project_wrapper {
   position: relative;
   background-color: #EEE;
 }
-div#project_wrapper img {
-  max-width: 100%;
+div#project_wrapper > * {
+  margin-top: 2.0rem;
+}
+div#project_wrapper > *:first-child {
+  margin-top: 0rem;
+}
+div#project_cover img,
+div#project_gallery img {
+  max-width: 800px;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+div#project_info {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1.0rem;
+}
+div#project_info h3 {
+  font-size: 1.8rem;
+  font-weight: 300;
+  letter-spacing: 0.06rem;
+}
+div#project_info h4 {
+  font-weight: 400;
+  line-height: 180%;
+  letter-spacing: 0.04rem;
+  margin-top: 0.6rem;
+}
+div#project_info p {
+  font-weight: 300;
+  line-height: 190%;
+  letter-spacing: 0.04rem;
+  margin-top: 0.5rem;
+}
+div#project_info div#project_text p {
+  text-indent: 0.8rem;
+}
+div#project_info div#project_text p.without_indent {
+  text-indent: 0rem;
+}
+div#project_info p:first-child {
+  margin-top: 1rem;
+}
+div#project_info a {
+  color: #555;
+  border-bottom: 2px solid #555;
+  margin: -0.1rem -0.1rem -0.1rem;
+  padding: 0.1rem 0.15rem 0.1rem;
+  transition: background-color 0.3s ease-out,
+    color 0.3s ease-out,
+    border 0.3s ease-out;
+}
+div#project_info a:focus,
+div#project_info a:hover,
+div#project_info a:active {
+  background-color: #888;
+  color: #FFF;
+}
+div#project_info p.meta_info {
+  text-align: right;
+  font-size: 0.9rem;
+  margin-top: 1.0rem;
+}
+div#project_gallery img {
+  margin-top: 2.0rem;
+}
+div#project_gallery p {
+  max-width: 800px;
+  width: 100%;
+  margin: 0.3rem auto 0;
+  padding-right: 1rem;
+  font-size: 0.9rem;
+  text-align: right;
 }
 
 /* for sp */
 @media screen and (max-width: 640px) {
+  body {
+    font-size: 14px;
+  }
   header h1 a, footer p a {
     font-size: 0.8rem;
     background-color: rgba(221,221,221,0.7); /* #DDD */
   }
   header h1 a {
-    padding-left: 36px;
+    padding-left: 2.0rem;
   }
 
   footer p a {
-    padding-right: 36px;
+    padding-right: 2.0rem;
   }
 
   div#wrapper > * {
@@ -301,8 +379,8 @@ div#project_wrapper img {
   }
 
   div#project_wrapper {
-    padding-left: 36px;
-    padding-right: 36px;
+    padding-left: 2.0rem;
+    padding-right: 2.0rem;
   }
 }
 
