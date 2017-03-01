@@ -62,7 +62,7 @@ div#wrapper {
   overflow: hidden;
   padding: 5.0rem 2.0rem 3.0rem;
   position: relative;
-  background-color: #DDD;
+  background-color: rgb(230,230,230); /* #EEE */
 }
 
 div#wrapper > * {
@@ -246,7 +246,7 @@ div#project_wrapper {
   overflow: hidden;
   padding: 5.0rem 48px 3.0rem;
   position: relative;
-  background-color: #EEE;
+  background-color: rgb(230,230,230); /* #EEE */
 }
 div#project_wrapper > * {
   margin-top: 2.0rem;
@@ -332,7 +332,7 @@ div#project_gallery p {
   }
   header h1 a, footer p a {
     font-size: 0.8rem;
-    background-color: rgba(221,221,221,0.7); /* #DDD */
+    background-color: rgba(230,230,230,0.7); /* #EEE */
   }
   header h1 a {
     padding-left: 2.0rem;
