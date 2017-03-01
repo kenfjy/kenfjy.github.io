@@ -43,11 +43,11 @@ footer {
 }
 
 header h1 a {
-  padding-left: 48px;
+  padding-left: 3.0rem;
 }
 
 footer p a {
-  padding-right: 48px;
+  padding-right: 3.0rem;
 }
 
 header h1 a span {
@@ -65,115 +65,16 @@ div#wrapper {
   background-color: rgb(230,230,230); /* #EEE */
 }
 
+div#project_wrapper {
+  background-color: rgb(230,230,230); /* #EEE */
+}
+
 div#wrapper > * {
   width: 80%;
   max-width: 640px;
   height: auto;
   margin-right: auto;
   margin-left: auto;
-}
-
-/*
- * index_project tag
- */
-
-project {
-  margin: 2.0rem auto 0;
-  position: relative;
-  border: 5px solid #FFF;
-  display: block;
-  transition: border 0.6s ease-out;
-}
-
-project:hover {
-  border-color: #777;
-}
-
-project:first-child {
-  margin-top: 0;
-}
-
-project * {
-  font-family: "Roboto", sans-serif;
-}
-
-project img.project_cover {
-  width: 100%;
-  min-width: 200px;
-  min-height: 200px;
-  opacity: 1.0;
-  transition: opacity 0.6s ease-out;
-  display: block;
-}
-
-project:hover img.project_cover {
-  opacity: 0.7;
-}
-
-project div.project_meta {
-  width: auto;
-  max-width: 600px;
-  height: auto;
-  overflow: hidden;
-  position: absolute;
-  display: inline-block;
-  left: -1rem;
-  bottom: 1rem;
-  padding: 1rem 1.5rem 1rem 3rem;
-  background-color: #FFF;
-  transition: background-color 0.6s ease-out; 
-}
-
-project:hover div.project_meta {
-  background-color: #666;
-}
-
-project div.project_meta h2,
-project div.project_meta p {
-  color: #333;
-  transition: color 0.6s ease-out;
-}
-
-project:hover div.project_meta h2,
-project:hover div.project_meta p {
-  color: #FFF;
-}
-
-div.project_meta h2 {
-  display: inline-block;
-  font-weight: 500;
-  letter-spacing: 0.08rem;
-  padding-bottom: 0.2rem;
-}
-
-div.project_meta p {
-  font-size: 0.8rem;
-  font-weight: 300;
-  padding-bottom: 0.5rem;
-  letter-spacing: 0.05rem;
-  line-height: 150%;
-}
-
-div.project_meta ul li {
-  display: inline-block;
-  padding: 0.1rem 0.4rem;
-  border: 1px solid #333;
-  font-size: 0.7rem;
-  font-family: "Roboto Slab", serif;
-  background-color: #FFF;
-  color: #333;
-  margin-left: 0.3rem;
-  transition: border 0.6s ease-out,
-    color 0.6s ease-out;
-}
-
-project:hover div.project_meta ul li {
-  border-color: #777;
-  color: #666;
-}
-
-div.project_meta ul li:first-child {
-  margin-left: 0;
 }
 
 /*
@@ -238,93 +139,6 @@ div#about span.sub_el a {
   border: none;
 }
 
-/* PROJECT PAGE */
-
-div#project_wrapper {
-  height: auto;
-  min-height: 100%;
-  overflow: hidden;
-  padding: 5.0rem 48px 3.0rem;
-  position: relative;
-  background-color: rgb(230,230,230); /* #EEE */
-}
-div#project_wrapper > * {
-  margin-top: 2.0rem;
-}
-div#project_wrapper > *:first-child {
-  margin-top: 0rem;
-}
-div#project_cover img,
-div#project_gallery img {
-  max-width: 800px;
-  display: block;
-  width: 100%;
-  margin: 0 auto;
-}
-div#project_info {
-  max-width: 720px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 1.0rem;
-}
-div#project_info h3 {
-  font-size: 1.8rem;
-  font-weight: 300;
-  letter-spacing: 0.06rem;
-}
-div#project_info h4 {
-  font-weight: 400;
-  line-height: 180%;
-  letter-spacing: 0.04rem;
-  margin-top: 0.6rem;
-}
-div#project_info p {
-  font-weight: 300;
-  line-height: 190%;
-  letter-spacing: 0.04rem;
-  margin-top: 0.5rem;
-}
-div#project_info div#project_text p {
-  text-indent: 0.8rem;
-}
-div#project_info div#project_text p.without_indent {
-  text-indent: 0rem;
-}
-div#project_info p:first-child {
-  margin-top: 1rem;
-}
-div#project_info a {
-  color: #555;
-  border-bottom: 2px solid #555;
-  margin: -0.1rem -0.1rem -0.1rem;
-  padding: 0.1rem 0.15rem 0.1rem;
-  transition: background-color 0.3s ease-out,
-    color 0.3s ease-out,
-    border 0.3s ease-out;
-}
-div#project_info a:focus,
-div#project_info a:hover,
-div#project_info a:active {
-  background-color: #888;
-  color: #FFF;
-}
-div#project_info p.meta_info {
-  text-align: right;
-  font-size: 0.9rem;
-  margin-top: 1.0rem;
-}
-div#project_gallery img {
-  margin-top: 2.0rem;
-}
-div#project_gallery p {
-  max-width: 800px;
-  width: 100%;
-  margin: 0.3rem auto 0;
-  padding-right: 1rem;
-  font-size: 0.9rem;
-  text-align: right;
-}
-
 /* for sp */
 @media screen and (max-width: 640px) {
   body {
@@ -346,42 +160,12 @@ div#project_gallery p {
     width: 100%;
   }
 
-  project {
-    border: 0;
-    transition: opacity 0.6s ease-out;
-  }
-
-  project:focus, 
-  project:hover, 
-  project:active {
-    opacity: 0.5;
-  }
-
-  project img.project_cover {
-    opacity: 1.0;
-  }
-
-  project div.project_meta {
-    position: relative;
-    width: 100%;
-    padding: 0;
-    left: 0;
-    bottom: 0;
-  }
-  project div.project_meta h2 {
-    padding: 1rem 1rem 0.2rem;
-  }
-  project div.project_meta p {
-    padding: 0 1rem 1rem;
-  }
-  project div.project_meta ul {
-    display: none;
-  }
-
+  /*
   div#project_wrapper {
     padding-left: 2.0rem;
     padding-right: 2.0rem;
   }
+  */
 }
 
 @keyframes NameHoverIn {
