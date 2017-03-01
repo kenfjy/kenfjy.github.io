@@ -1,0 +1,52 @@
+/* ABOUT & CONTACT */
+
+div#about > div {
+  margin-top: 2rem;
+}
+div#about > div:first-child {
+  margin-top: 0;
+}
+div#about h3, div#contact h3 {
+  letter-spacing: 0.05rem;
+  font-size: 1rem;
+  font-weight: 500;
+  display: inline-block;
+}
+div#about p, div#contact p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-top: 0.8rem;
+  line-height: 190%;
+}
+div#about a, div#contact a {
+  color: #555;
+  border-bottom: 2px solid #555;
+  margin: -0.1rem -0.1rem -0.1rem;
+  padding: 0.1rem 0.15rem 0.1rem;
+  transition: background-color 0.3s ease-out,
+    color 0.3s ease-out,
+    border 0.3s ease-out;
+}
+div#about a:focus, div#contact a:focus,
+div#about a:hover, div#contact a:hover,
+div#about a:active, div#contact a:active {
+  background-color: #888;
+  color: #FFF;
+}
+div#about div#profile p {
+  text-indent: 1rem;
+}
+div#about span.sub_el {
+  font-size: 0.8rem;
+}
+div#about span.sub_el a {
+  border: none;
+}
+
+/* for sp */
+@media screen and (max-width: 640px) {
+  div#about p, div#contact p {
+    font-size: 0.9rem;
+    line-height: 190%;
+  }
+}
