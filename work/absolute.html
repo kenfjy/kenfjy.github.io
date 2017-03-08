@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>kenfjy - ABSOLUTE MOMENT</title>
+    <meta name="description" content="portfolio website for ken fujiyoshi">
+    <meta name="keywords" content="design, creative, technology, ken, fujiyoshi, kenfjy, klee_arc">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400|Roboto:300,400,400i,500" rel="stylesheet">
+    <link href="../css/reset.css" type="text/css" rel="stylesheet"/>
+    <link href="../css/style.css" type="text/css" rel="stylesheet"/>
+    <link href="../css/project.css" type="text/css" rel="stylesheet"/>
+    <!-- <script type="application/javascript" src="./js/script.js"></script> -->
+    <script src="../js/riot.compiler.min.js"></script>
+    <script src="../tag/page_header.tag" type="riot/tag"></script>
+    <script src="../tag/page_footer.tag" type="riot/tag"></script>
+    <script src="../tag/credit.tag" type="riot/tag"></script>
+  </head>
+  <body>
+    <page_header></page_header>
+    <div id="project_wrapper">
+      <div id="project_cover">
+        <img src="../img/cover/absolute_icon.jpg" alt=""/>
+      </div><!-- div#project_cover -->
+      <div id="project_info">
+        <h3>ABSOLUTE MOMENT</h3>
+        <h4>Extending the potential of art beyond the gallery and artists</h4>
+        <div id="project_text">
+          <p>In this project, we were given a brief of designing a unique object / product for ABSOLUT, a vodka maker, that displays their brand values and experiences. We identified ABSOLUT’s strong value in “transformation”: the brand has proven its ability to transform something mundane to extraodinary iconic products, over and over. </p>
+          <p>Since art has been focus of ABSOLUT in past years, we explored a method in which ABSOLUTE could transform art to something open for everyone to engage, and outside of galleries and museums. We experimented possibilities of different engagement and interventions towards the viewers, and ultimately, implemented a colour changing board, that could be used to transform bathrooms into galleries, and boresome urinating into an act of art.</p>
+          <p>* This project was run as part of college programme independent from any activities of ABSOLUT</p>
+        </div><!-- div#project_text -->
+        <p class="meta_info">Collaborators: <a target="_blank" href="http://www.chiuchih.com/">Chih Chiu</a>, <a target="_blank" href="https://www.katemccambridge.com/">Kate McCambridge</a></p>
+      </div><!-- div#project_info -->
+      <div id="project_gallery">
+        <div>
+          <img src="../img/cover/absolute_icon.jpg" alt=""/>
+          <p></p>
+        </div>
+      </div><!-- div#project_gallery -->
+      <credit></credit>
+    </div><!-- div#project_wrapper -->
+    <page_footer></page_footer>
+
+    <script>
+/* ASSETS */
+riot.mount('page_header', 'page_header', {link: '../index.html'});
+riot.mount('page_footer', 'page_footer', {link: '../contact.html'});
+riot.mount('credit', 'credit', {});
+    </script>
+  </body>
+</html>

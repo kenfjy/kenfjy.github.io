@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>kenfjy - FABRICA</title>
+    <meta name="description" content="portfolio website for ken fujiyoshi">
+    <meta name="keywords" content="design, creative, technology, ken, fujiyoshi, kenfjy, klee_arc">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400|Roboto:300,400,400i,500" rel="stylesheet">
+    <link href="../css/reset.css" type="text/css" rel="stylesheet"/>
+    <link href="../css/style.css" type="text/css" rel="stylesheet"/>
+    <link href="../css/project.css" type="text/css" rel="stylesheet"/>
+    <!-- <script type="application/javascript" src="./js/script.js"></script> -->
+    <script src="../js/riot.compiler.min.js"></script>
+    <script src="../tag/page_header.tag" type="riot/tag"></script>
+    <script src="../tag/page_footer.tag" type="riot/tag"></script>
+    <script src="../tag/credit.tag" type="riot/tag"></script>
+  </head>
+  <body>
+    <page_header></page_header>
+    <div id="project_wrapper">
+      <div id="project_cover">
+        <img src="../img/work/fabrica/" alt=""/>
+      </div><!-- div#project_cover -->
+      <div id="project_info">
+        <h3>FABRICA</h3>
+        <h4>Connecting to 3D printer from anywhere anytime</h4>
+        <div id="project_text">
+          <p>Wells Fargo estimates that the 3D printing market will grow from $288M in 2012 to $5.7B in 2017, and the share of revenue created by the consumers will extend as well. Although people speak how it is a versatile machine, allowing people to create anything they can imagine, a 3D printer requires users to manipulate the machine from their personal devises, yet take hours to print one simple object.</p>
+          <p>FABRICA is a web service that allows users to manipulate and control 3D printers from online interface by connecting the printers to an original board. As a member of the development team, I programmed the original board and created the main server-side control programs.</p>
+        </div><!-- div#project_text -->
+        <p class="meta_info">Collaborators: Masayoshi Mitsui, Konomi Morikawa, Takumi Moriya</p>
+      </div><!-- div#project_info -->
+      <div id="project_gallery">
+        <div>
+          <img src="../img/work/fabrica/" alt=""/>
+          <p></p>
+        </div>
+      </div><!-- div#project_gallery -->
+      <credit></credit>
+    </div><!-- div#project_wrapper -->
+    <page_footer></page_footer>
+
+    <script>
+/* ASSETS */
+riot.mount('page_header', 'page_header', {link: '../index.html'});
+riot.mount('page_footer', 'page_footer', {link: '../contact.html'});
+riot.mount('credit', 'credit', {});
+    </script>
+  </body>
+</html>
