@@ -95,4 +95,7 @@ div#project_gallery p {
     padding-left: 2.0rem;
     padding-right: 2.0rem;
   }
+  div#project_info {
+    padding: 0;
+  }
 }
