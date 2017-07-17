@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>kenfjy - DIS-COURSE</title>
+    <meta name="description" content="portfolio website for ken fujiyoshi">
+    <meta name="keywords" content="design, creative, technology, ken, fujiyoshi, kenfjy, klee_arc">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400|Roboto:300,400,400i,500" rel="stylesheet">
+    <link href="../css/reset.css" type="text/css" rel="stylesheet"/>
+    <link href="../css/style.css" type="text/css" rel="stylesheet"/>
+    <link href="../css/project.css" type="text/css" rel="stylesheet"/>
+    <!-- <script type="application/javascript" src="./js/script.js"></script> -->
+    <script src="../js/riot.compiler.min.js"></script>
+    <script src="../tag/page_header.tag" type="riot/tag"></script>
+    <script src="../tag/page_footer.tag" type="riot/tag"></script>
+    <script src="../tag/credit.tag" type="riot/tag"></script>
+  </head>
+  <body>
+    <page_header></page_header>
+    <div id="project_wrapper">
+      <div id="project_cover">
+        <img src="../img/cover/discourse_icon.jpg" alt=""/>
+      </div><!-- div#project_cover -->
+      <div id="project_info">
+        <h3>DIS-COURSE</h3>
+        <h4>An experimental system that allows its users to explore their conversations.</h4>
+        <div id="project_text">
+          <p>When people establish relationships with others, at the same time, they become insensitive to and limit themselves from alternative relationships that they could possibly have with them. How do we break these unrecognised limitations that we are giving to ourselves and create richer relationships?</p>
+          <p>DIS-COURSE is a tool that allows its users to explore the possible relationships they could have with people around them, through showing the “possible alternatives”. It listens to the conversation that happens between two people, and through analysing and tracking it, displays a possible route it could take. These cues take the form of short words, and are only shown for a short amount of time and are also only shown to one person at the time - allowing the users to have the freedom and flexibility of whether to acquire the cue or not.</p>
+          <p>Ultimately, through these interventions, DIS-COURSE aspires to challenge people to step out from their mundane and comfortable conversations and explore different topics.</p>
+        </div><!-- div#project_text -->
+        <p class="meta_info">Collaborators: <a target="_blank" href="http://www.tamchiyan.com">Carolyn Tam</a></p>
+      </div><!-- div#project_info -->
+      <div id="project_gallery">
+        <div>
+          <img src="../img/work/discourse/front.jpg" alt="Front view of DIS-COURSE"/>
+          <p>Front view of DIS-COURSE</p>
+        </div>
+        <div>
+          <img src="../img/work/discourse/interaction.jpg" alt="DIS-COURSE starts/stops with one button"/>
+          <p>DIS-COURSE starts/stops with one button</p>
+        </div>
+        <div>
+          <img src="../img/work/discourse/scene.jpg" alt="A user scene of DIS-COURSE"/>
+          <p>DIS-COURSE in action</p>
+        </div>
+      </div><!-- div#project_gallery -->
+      <credit></credit>
+    </div><!-- div#project_wrapper -->
+    <page_footer></page_footer>
+
+    <script>
+/* ASSETS */
+riot.mount('page_header', 'page_header', {link: '../index.html'});
+riot.mount('page_footer', 'page_footer', {link: '../contact.html'});
+riot.mount('credit', 'credit', {});
+    </script>
+  </body>
+</html>
